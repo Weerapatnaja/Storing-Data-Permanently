@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Data_Storing_PerManentty" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,76 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spencer-harrison-1-iphone5.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="JJ3-gA-DYZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What Phone Number ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mgb-AO-Vbl">
+                                <rect key="frame" x="80" y="49" width="215.5" height="25"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="1" height="-1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t53-Pg-3SK">
+                                <rect key="frame" x="54" y="248" width="267" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="1" height="0.0"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7mn-1a-why"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Phone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hsb-6O-tMp">
+                                <rect key="frame" x="89" y="111" width="197" height="24"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="0.63843107876712335" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sZN-2m-fEL">
+                                <rect key="frame" x="54" y="197" width="267" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JJ3-gA-DYZ" secondAttribute="bottom" id="19W-Wc-ITd"/>
+                            <constraint firstItem="sZN-2m-fEL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Cd-3M-GXq"/>
+                            <constraint firstItem="Hsb-6O-tMp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4xf-p9-r7v"/>
+                            <constraint firstItem="Mgb-AO-Vbl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="29" id="6gt-7F-QZU"/>
+                            <constraint firstItem="sZN-2m-fEL" firstAttribute="top" secondItem="Hsb-6O-tMp" secondAttribute="bottom" constant="62" id="EDZ-az-FzL"/>
+                            <constraint firstItem="JJ3-gA-DYZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="EUb-pW-UQB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sZN-2m-fEL" secondAttribute="trailing" constant="38" id="FSp-HD-5Ma"/>
+                            <constraint firstItem="sZN-2m-fEL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="38" id="IrV-2u-jA2"/>
+                            <constraint firstItem="Mgb-AO-Vbl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KCv-6j-VY0"/>
+                            <constraint firstItem="JJ3-gA-DYZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LXa-3i-bPK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Hsb-6O-tMp" secondAttribute="trailing" constant="73" id="NQd-sy-weX"/>
+                            <constraint firstAttribute="trailing" secondItem="JJ3-gA-DYZ" secondAttribute="trailing" id="ODS-UP-iZF"/>
+                            <constraint firstItem="Hsb-6O-tMp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="73" id="X2B-P3-XsJ"/>
+                            <constraint firstItem="t53-Pg-3SK" firstAttribute="top" secondItem="sZN-2m-fEL" secondAttribute="bottom" constant="21" id="bMO-81-EUO"/>
+                            <constraint firstItem="t53-Pg-3SK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fQM-eP-SUR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="t53-Pg-3SK" secondAttribute="trailing" constant="38" id="niy-IP-zsP"/>
+                            <constraint firstItem="Hsb-6O-tMp" firstAttribute="top" secondItem="Mgb-AO-Vbl" secondAttribute="bottom" constant="37" id="srA-c0-RHC"/>
+                            <constraint firstItem="t53-Pg-3SK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="38" id="xeF-t4-Khu"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="phoneTextField" destination="sZN-2m-fEL" id="hyv-7W-u6i"/>
+                        <outlet property="showPhoneLable" destination="Hsb-6O-tMp" id="w41-DX-JMZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="spencer-harrison-1-iphone5.jpg" width="640" height="1136"/>
+    </resources>
 </document>

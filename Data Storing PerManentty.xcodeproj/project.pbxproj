@@ -12,6 +12,7 @@
 		FA3B09381EF23DF100A37C01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3B09361EF23DF100A37C01 /* Main.storyboard */; };
 		FA3B093A1EF23DF100A37C01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3B09391EF23DF100A37C01 /* Assets.xcassets */; };
 		FA3B093D1EF23DF100A37C01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3B093B1EF23DF100A37C01 /* LaunchScreen.storyboard */; };
+		FA3B09451EF23F5600A37C01 /* spencer-harrison-1-iphone5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA3B09441EF23F5600A37C01 /* spencer-harrison-1-iphone5.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FA3B09391EF23DF100A37C01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA3B093C1EF23DF100A37C01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA3B093E1EF23DF100A37C01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA3B09441EF23F5600A37C01 /* spencer-harrison-1-iphone5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "spencer-harrison-1-iphone5.jpg"; path = "../../../../Downloads/spencer-harrison-1-iphone5.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		FA3B09311EF23DF100A37C01 /* Data Storing PerManentty */ = {
 			isa = PBXGroup;
 			children = (
+				FA3B09441EF23F5600A37C01 /* spencer-harrison-1-iphone5.jpg */,
 				FA3B09321EF23DF100A37C01 /* AppDelegate.swift */,
 				FA3B09341EF23DF100A37C01 /* ViewController.swift */,
 				FA3B09361EF23DF100A37C01 /* Main.storyboard */,
@@ -126,6 +129,7 @@
 				FA3B093D1EF23DF100A37C01 /* LaunchScreen.storyboard in Resources */,
 				FA3B093A1EF23DF100A37C01 /* Assets.xcassets in Resources */,
 				FA3B09381EF23DF100A37C01 /* Main.storyboard in Resources */,
+				FA3B09451EF23F5600A37C01 /* spencer-harrison-1-iphone5.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
